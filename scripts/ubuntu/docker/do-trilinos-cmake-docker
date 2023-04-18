@@ -22,7 +22,7 @@ cmake \
     -D CMAKE_CXX_COMPILER:FILEPATH=mpicxx \
     -D CMAKE_C_COMPILER:FILEPATH=mpicc \
     -D Trilinos_ENABLE_CXX11:BOOL=ON \
-    -D Trilinos_ENABLE_OpenMP:BOOL=ON \
+    -D Trilinos_ENABLE_OpenMP:BOOL=OFF \
     -D TPL_ENABLE_BinUtils:BOOL=OFF \
     -D TPL_ENABLE_BLAS:BOOL=ON \
     -D TPL_BLAS_LIBRARIES:STRING=/usr/lib/libblas.so.3 \
