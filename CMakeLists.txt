@@ -198,7 +198,7 @@ else()
   ADD_DEFINITIONS(-DUSE_FLOAT_STORAGE=1)
 endif()
 ExternalProject_Add(hypercine
-  GIT_REPOSITORY git@github.com:dicengine/hypercine.git
+  GIT_REPOSITORY https://github.com/J-C-Haley/hypercine.git
   PREFIX ${CMAKE_CURRENT_BINARY_DIR}/hypercine
   CMAKE_ARGS ${HYPERCINE_CMAKE_ARGS}
 )
