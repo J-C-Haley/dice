@@ -4,7 +4,7 @@ rm -f CMakeCache.txt
 rm -rf CMakeFiles
 EXTRA_ARGS=$@
 cmake \
-    -D CMAKE_INSTALL_PREFIX:FILEPATH=/trilinos-13.0.0-Source/build/install \
+    -D CMAKE_INSTALL_PREFIX:FILEPATH=/trilinos-12.4.2-Source/build/install \
     -D CMAKE_BUILD_TYPE:STRING=RELEASE \
     -D CMAKE_CXX_FLAGS:STRING="-g -Wall" \
     -D CMAKE_C_FLAGS:STRING="-g -Wall" \
