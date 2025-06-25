@@ -42,9 +42,7 @@
 #include <cassert>
 #include <iostream>
 #include <fstream>
-#if defined(WIN32)
-  #include <cstdint>
-#endif
+#include <cstdint>
 
 #include <DICe_Rawi.h>
 
