@@ -32,9 +32,10 @@ include_directories(
     ${NetCDF_DIR}
 )
 
-SET(DICE_UTILS_LIBRARIES ${DICE_UTILS_LIBRARIES} teuchoscore teuchosparameterlist)
+SET(DICE_UTILS_LIBRARIES ${DICE_UTILS_LIBRARIES}
+  ${TeuchosCore_LIBRARIES} ${TeuchosParameterList_LIBRARIES})
 if(DICE_ENABLE_NETCDF)
-  SET(DICE_UTILS_LIBRARIES ${DICE_UTILS_LIBRARIES} netcdf)
+  SET(DICE_UTILS_LIBRARIES ${DICE_UTILS_LIBRARIES} ${NetCDF_lib})
 ENDIF()
 
 # Specify target & source files to compile it from
